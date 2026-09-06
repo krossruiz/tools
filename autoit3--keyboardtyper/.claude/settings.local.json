@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:\\\\Program Files \\(x86\\)\\\\AutoIt3\\\\AutoIt3.exe *)",
+      "Bash(\"C:\\\\Program Files \\(x86\\)\\\\AutoIt3\\\\AutoIt3.exe\" /ErrorStdOut \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.au3\")",
+      "Bash(echo \"EXITCODE=$?\")",
+      "PowerShell($env:Path; & \"C:\\\\Program Files \\(x86\\)\\\\AutoIt3\\\\AutoIt3.exe\" /ErrorStdOut \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.au3\" 2>&1; \"LastExit=$LASTEXITCODE\"; Test-Path \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.log\")",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\AutoIt3\\\\AutoIt3.exe\" /ErrorStdOut \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.au3\" 2>&1; \"LastExit=$LASTEXITCODE\"; \"----- LOG -----\"; if \\(Test-Path \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.log\"\\) { Get-Content \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.log\" } else { \"no log\" })",
+      "PowerShell($p = Start-Process -FilePath \"C:\\\\Program Files \\(x86\\)\\\\AutoIt3\\\\AutoIt3.exe\" -ArgumentList '/ErrorStdOut','C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.au3' -PassThru -Wait; \"ExitCode=$\\($p.ExitCode\\)\"; \"----- LOG -----\"; if \\(Test-Path \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.log\"\\) { Get-Content \"C:\\\\Users\\\\KROSS\\\\Desktop\\\\programming projects\\\\tools\\\\autoit3--keyboardtyper\\\\test-hello-world.log\" } else { \"no log\" })"
+    ]
+  }
+}
